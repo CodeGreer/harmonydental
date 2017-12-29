@@ -1,0 +1,579 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 0.063em; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+/* All of your setup and non media query CSS */
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url(../css/sourcesanspro-regular-webfont.woff2) format('woff2'), /* Super Modern Browsers */
+       url(../css/sourcesanspro-regular-webfont.woff) format('woff'), /* Pretty Modern Browsers */
+       url(../css/sourcesanspro-regular-webfont.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(../css/sourcesanspro-regular-webfont.svg) format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'SourceSansProBold';
+  src: url(../css/sourcesanspro-bold-webfont.woff2) format('woff2'), /* Super Modern Browsers */
+       url(../css/sourcesanspro-bold-webfont.woff) format('woff'), /* Pretty Modern Browsers */
+       url(../css/sourcesanspro-bold-webfont.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(../css/sourcesanspro-bold-webfont.svg) format('svg'); /* Legacy iOS */
+}
+
+html {
+    font: normal 100% 'SourceSansPro', sans-serif;
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    font-family: 'SourceSansPro', sans-serif;
+    font-size: 100%;
+    color: #6A6A6A;
+    line-height: 1.625;
+}
+
+h2 {
+    font-family: 'SourceSansProBold', sans-serif;
+    font-size: 1.5em;
+    color: #4A96FB;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bold {
+    font-family: 'SourceSansProBold', sans-serif;
+}
+
+.blue {
+    color: #0A20A2;
+}
+
+.ltblue {
+    color: #4A96FB;
+}
+
+/* Header Navigation */
+
+/* Tabs */
+
+nav {
+    display: flex;
+    padding: 1% 0;
+}
+
+nav a {
+    flex: 1;
+    text-align: left;
+    padding: .5% 0;
+}
+
+nav a:link, nav a:visited, nav a:hover, nav a:active {
+    color: #6A6A6A; text-decoration: none; 
+} 
+
+nav a + a {
+   border-left: .1em solid #6A6A6A;
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location {
+    width: 3%;
+}
+
+.address {
+    font-size: .7em;
+}
+
+/* Header Banner */
+
+
+#banner {
+    width: 80%;
+    margin: 0 10%;
+    padding: 1% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner > * {
+    align-self: center;
+}
+
+.logo {
+    width: 15%;
+}
+
+#banner > span {
+    font-family: 'SourceSansProBold', sans-serif;
+    font-size: 3.5em;
+}
+
+.heart {
+    width: 15%;
+}
+
+.fb {
+    width: 4%;
+}
+
+/* Main - Main */ 
+
+main p {
+    width: 80%;
+    margin: 0 10%;
+    padding: 1% 0;
+}
+
+/* Offices and Services */
+
+.offices {
+    width: 80%;
+    margin: 0 10%;
+    padding: 1% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.offices > div {
+    width: 45%;
+    font-size: 1.25em;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.button {
+    width: 70%;
+    margin: 0 15%;
+    background-color: #0A20A2;
+    padding: 2% 1%;
+    color: #FFF;
+    border-radius: 5px;
+    font-size: .7em;
+}
+
+.services {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 0 10%;
+    padding: 2% 0 1%;
+}
+
+.services > div {
+    padding: 0 1%;
+    flex: 1 0 30%;
+}
+
+.services  p {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1em;
+} 
+
+/* Footer */
+
+footer {
+    font-size: .9em;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    padding: 1% 25%;
+}
+    
+footer nav a + a {
+    border: none;
+}
+
+footer nav + div {
+    padding: 2% 0;
+    background-color: #4A96FB;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/**** Mobile First Media Queries ****/
+
+
+/*** Up to 5200px 25% ***/
+@media only screen and (max-width: 325em) {
+  
+    body {
+        font-size: 400%;
+    } 
+}
+
+/*** Up to 3904px 33% ***/
+@media only screen and (max-width: 244em) {
+    
+    body {
+         font-size: 300.5%;
+    }         
+}
+
+/*** Up to 2640px 50% ***/
+@media only screen and (max-width: 165em) {
+    
+    body {
+         font-size: 200%;
+    }   
+}
+
+/*** Up to 2000px 67% ***/
+@media only screen and (max-width: 125em) {
+    
+    body {
+         font-size: 150.2%;
+    }     
+}
+
+/*** Up to 1840px 75% ***/
+@media only screen and (max-width: 115em) {
+ 
+    body {
+         font-size: 133.3%;
+    }        
+}
+
+/*** Up to 1520px 90% ***/
+@media only screen and (max-width: 95em) {
+ 
+    body {
+         font-size: 111.1%;
+    }        
+}
+
+/*** Up to 1360px 100% ***/
+@media only screen and (max-width: 85em) {
+   
+    body {
+        font-size: 95%;
+    } 
+}
+    
+/*** Up to 1280px 100% ***/    
+@media only screen and (max-width: 80em) {
+    
+    body {
+        font-size: 95%;
+    } 
+}
+
+/*** Up to 1200px 110% 
+@media only screen and (max-width: 75em) {
+  
+    body {
+        font-size: 95%;
+    }   
+}
+
+/*** Up to 1120px ***/
+@media only screen and (max-width: 70em) {
+  
+    body {
+        font-size: 85%;  
+    }         
+}
+
+/*** Up to 1040px 125% ***/
+@media only screen and (max-width: 65em) {
+    
+    body {
+         font-size: 80%;
+    }    
+}
+
+/*** Up to 976px ***/
+@media only screen and (max-width: 61em) {
+  
+    body {
+        font-size: 70%;
+    }      
+}
+
+/*** Up to 880px 150% ***/
+@media only screen and (max-width: 55em) {
+  
+    body {
+       font-size: 65%;
+    }   
+}
+
+
+/************ Change Format ************/
+
+
+/*** Up to 800px 175% ***/
+@media only screen and (max-width: 50em) {
+ 
+    body {
+        font-size: 90%;
+    }  
+    
+    nav, #banner, main p, .offices, .services {
+        padding: 2% 0;
+    }
+    
+    /* Header Banner */
+
+    #banner {
+        width: 90%;
+        margin: 0 5%;
+        flex-flow: wrap;
+    }
+
+    .logo {
+        width: 35%;
+    }
+
+    .heart {
+        width: 40%;
+    }
+
+    .fb {
+        width: 7%;
+    }
+    
+/* Main - Main */    
+    
+    main p, .offices, .services {
+        width: 90%;
+        margin: 0 5%;
+    }  
+    
+    .button {
+        width: 80%;
+        margin: 0 10%;
+    }
+    
+    .services {
+        padding-top: 4%;
+    }
+    
+    .services > div {
+        flex: 1 0 48%;
+        padding: 0 1% 2%;
+    }
+    
+    .services img {
+        width: 100%;
+    }
+
+/* Footer */
+
+    footer nav {
+        padding: 2% 15%;
+    }
+}
+
+/*** Up to 720px ***/
+@media only screen and (max-width: 45em) {
+ 
+    body {
+        font-size: 80%;
+    }          
+}
+
+/*** Up to 640px ***/
+@media only screen and (max-width: 40em) {
+    
+    body {
+        font-size: 70%;
+    }      
+}
+
+/*** Up to 560px ***/
+@media only screen and (max-width: 35em) {
+  
+    body {
+        font-size: 90%;
+    }  
+    
+    #banner, main p, .offices, .services {
+        padding: 4% 0;
+    }
+    
+/* Header Navigation */
+
+/* Tabs */
+    
+    nav {
+        flex-flow: column wrap;
+    }
+
+    nav a {
+        padding: 2% 0;
+    }
+    
+/* Header Banner */
+
+    .logo {
+        width: 90%;
+    }
+    
+    #banner > span {
+        font-size: 3.2em;
+    }
+
+    .heart {
+        width: 75%;
+    }
+
+    .fb {
+        width: 15%;
+    }
+    
+/* Main - Main */    
+    
+    main p, .offices, .services {
+        width: 90%;
+        margin: 0 5%;
+    }  
+    
+    .offices {
+        flex-flow: column wrap;
+    }
+    
+    .offices > div {
+        width: 100%;
+        padding: 4% 0 8%;
+    }
+    
+    .button {
+        width: 70%;
+        margin: 0 15%;
+    }
+    
+    .services {
+        padding-top: 0;
+    }
+    
+    .services > div {
+        flex: 1 0 100%;
+        padding: 0;
+    }
+
+/* Footer */
+
+    footer nav {
+        padding: 2% 5%;
+        flex-flow: column wrap;
+    }
+    
+    footer nav a {
+        padding: 4% 0;
+    }
+    
+    footer nav + div {
+        padding: 6% 0;
+    }
+}
+
+/*** Up to 480px ***/
+@media only screen and (max-width: 30em) {
+    
+    body {
+        font-size: 90%;
+    }        
+    
+     #banner > span {
+        font-size: 2.5em;
+    }
+}
+
+/*** Up to 400px ***/
+@media only screen and (max-width: 25em) {
+
+    body {
+        font-size: 85%;
+    }   
+}
+
+/*** Up to 336px ***/
+@media only screen and (max-width: 21em) {
+   
+    body {
+        font-size: 80%;
+    }  
+}
+
+/*** Up to 256px ***/
+@media only screen and (max-width: 16em) {
+   
+    body {
+        font-size: 70%;
+    }   
+}
+
+/*** Up to 224px ***/
+@media only screen and (max-width: 14em) {
+
+    body {
+        font-size: 60%;
+    }     
+}
