@@ -78,6 +78,16 @@ body {
     line-height: 1.625;
 }
 
+h1 {
+    position: absolute;
+    top: 4%;
+    left: 6%;
+    font-family: 'SourceSansProBold', sans-serif;
+    font-size: 2.9em;
+    color: #FFF;
+    text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.9);
+}
+
 h2 {
     font-family: 'SourceSansProBold', sans-serif;
     font-size: 1.5em;
@@ -92,6 +102,10 @@ img {
     max-width: 100%;
 }
 
+ul li {
+    list-style-type: none;
+}
+
 .bold {
     font-family: 'SourceSansProBold', sans-serif;
 }
@@ -100,17 +114,46 @@ img {
     color: #0A20A2;
 }
 
+.white {
+    color: #FFF;
+}
+
+.gray {
+    background-color: #6A6A6A;
+}
+
 .ltblue {
     color: #4A96FB;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: inherit; text-decoration: none; 
+} 
+
+nav, nav div, nav ul, #main-banner, #location-banner, .offices, .services, footer nav, footer nav + div {
+    display: flex;
 }
 
 /* Header Navigation */
 
 /* Tabs */
 
-nav {
-    display: flex;
-    padding: 1% 0;
+#location-header-nav ul {
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 3% 5% 0;
+    justify-content: flex-end;
+}
+
+#location-header-nav ul li {
+    padding: 0 1%;
+    font-size: .9em;
+    color: #0A20A2;
+}
+
+nav div {
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
@@ -119,18 +162,8 @@ nav a {
     padding: .5% 0;
 }
 
-nav a:link, nav a:visited, nav a:hover, nav a:active {
-    color: #6A6A6A; text-decoration: none; 
-} 
-
-nav a + a {
+#top-nav a + a {
    border-left: .1em solid #6A6A6A;
-}
-
-nav div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .location {
@@ -143,16 +176,12 @@ nav div {
 
 /* Header Banner */
 
-
-#banner {
-    width: 80%;
-    margin: 0 10%;
-    padding: 1% 0;
-    display: flex;
+#main-banner, #location-banner {
+    padding: 1% 5%;
     justify-content: space-between;
 }
 
-#banner > * {
+#main-banner > *, #location-banner > * {
     align-self: center;
 }
 
@@ -160,7 +189,7 @@ nav div {
     width: 15%;
 }
 
-#banner > span {
+#main-banner > span, #location-banner > span {
     font-family: 'SourceSansProBold', sans-serif;
     font-size: 3.5em;
 }
@@ -169,25 +198,29 @@ nav div {
     width: 15%;
 }
 
+.heart-md {
+    width: 19%;
+}
+
 .fb {
-    width: 4%;
+    width: 60%;
 }
 
 /* Main - Main */ 
 
-main p {
-    width: 80%;
-    margin: 0 10%;
-    padding: 1% 0;
+main {
+    position: relative;
 }
+
+main p {
+    padding: 1% 5%;
+}
+
 
 /* Offices and Services */
 
 .offices {
-    width: 80%;
-    margin: 0 10%;
-    padding: 1% 0;
-    display: flex;
+    padding: 1% 5%;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -204,32 +237,42 @@ main p {
 
 .button {
     width: 70%;
-    margin: 0 15%;
+    margin: 0 auto;
     background-color: #0A20A2;
     padding: 2% 1%;
     color: #FFF;
     border-radius: 5px;
     font-size: .7em;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
 }
 
 .services {
-    display: flex;
     flex-flow: row wrap;
-    width: 80%;
-    margin: 0 10%;
-    padding: 2% 0 1%;
+    padding: 2% 5% 1%;
 }
 
 .services > div {
-    padding: 0 1%;
+    padding: 0 3% 0 0;
     flex: 1 0 30%;
+}
+
+.services > div + div + div {
+    padding-right: 0;
 }
 
 .services  p {
     width: 100%;
-    margin: 0 auto;
+    padding: 0;
     font-size: 1em;
 } 
+
+.services .button {
+    width: 100%;
+    margin-top: 2%;
+    font-size: 1em;
+}
 
 /* Footer */
 
@@ -237,13 +280,12 @@ footer {
     font-size: .9em;
 }
 
-footer nav {
-    display: flex;
+#main-footer-nav {
     justify-content: center;
     padding: 1% 25%;
 }
     
-footer nav a + a {
+#main-footer-nav a + a {
     border: none;
 }
 
@@ -251,9 +293,24 @@ footer nav + div {
     padding: 2% 0;
     background-color: #4A96FB;
     color: #FFF;
-    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Footer - Location */
+
+#location-footer-nav ul {
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+#location-footer-nav ul li {
+    font-family: 'SourceSansProBold', sans-serif;
+    font-size: 1em;
+    color: #0A20A2;
 }
 
 
@@ -375,15 +432,17 @@ footer nav + div {
         font-size: 90%;
     }  
     
-    nav, #banner, main p, .offices, .services {
+    nav a {
         padding: 2% 0;
+    }
+    
+    #main-banner, #location-banner, main p, .offices, .services {
+        padding: 2% 5%;
     }
     
     /* Header Banner */
 
-    #banner {
-        width: 90%;
-        margin: 0 5%;
+    #main-banner, #location-banner {
         flex-flow: wrap;
     }
 
@@ -396,28 +455,26 @@ footer nav + div {
     }
 
     .fb {
-        width: 7%;
+        width: 80%;
     }
     
 /* Main - Main */    
-    
-    main p, .offices, .services {
-        width: 90%;
-        margin: 0 5%;
-    }  
-    
+
     .button {
         width: 80%;
-        margin: 0 10%;
     }
     
     .services {
         padding-top: 4%;
     }
-    
+
     .services > div {
-        flex: 1 0 48%;
-        padding: 0 1% 2%;
+        flex: 1 0 44%;
+        padding: 0 3% 0 0;
+    }
+    
+    .services > div + div {
+        padding: 0;
     }
     
     .services img {
@@ -426,8 +483,8 @@ footer nav + div {
 
 /* Footer */
 
-    footer nav {
-        padding: 2% 15%;
+    #main-footer-nav {
+        padding: 2% 10%;
     }
 }
 
@@ -454,8 +511,8 @@ footer nav + div {
         font-size: 90%;
     }  
     
-    #banner, main p, .offices, .services {
-        padding: 4% 0;
+    #main-banner, #location-banner, main p, .offices, .services {
+        padding: 4% 5%;
     }
     
 /* Header Navigation */
@@ -465,9 +522,9 @@ footer nav + div {
     nav {
         flex-flow: column wrap;
     }
-
+    
     nav a {
-        padding: 2% 0;
+        padding: 4% 0;
     }
     
 /* Header Banner */
@@ -476,7 +533,7 @@ footer nav + div {
         width: 90%;
     }
     
-    #banner > span {
+    #main-banner > span, #location-banner > span {
         font-size: 3.2em;
     }
 
@@ -485,15 +542,10 @@ footer nav + div {
     }
 
     .fb {
-        width: 15%;
+        width: 90%;
     }
     
 /* Main - Main */    
-    
-    main p, .offices, .services {
-        width: 90%;
-        margin: 0 5%;
-    }  
     
     .offices {
         flex-flow: column wrap;
@@ -502,11 +554,6 @@ footer nav + div {
     .offices > div {
         width: 100%;
         padding: 4% 0 8%;
-    }
-    
-    .button {
-        width: 70%;
-        margin: 0 15%;
     }
     
     .services {
@@ -520,12 +567,12 @@ footer nav + div {
 
 /* Footer */
 
-    footer nav {
-        padding: 2% 5%;
+    #main-foooter-nav {
+        padding: 4% 5%;
         flex-flow: column wrap;
     }
     
-    footer nav a {
+    #main-footer-nav a {
         padding: 4% 0;
     }
     
@@ -541,7 +588,7 @@ footer nav + div {
         font-size: 90%;
     }        
     
-     #banner > span {
+     #main-banner > span, #location-banner > span {
         font-size: 2.5em;
     }
 }
