@@ -94,6 +94,11 @@ h2 {
     color: #4A96FB;
 }
 
+h3 {
+    font-size: 2em;
+    text-align: left;
+}
+
 p {
     font-size: 1.25em;
 }
@@ -126,13 +131,32 @@ ul li {
     color: #4A96FB;
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
     color: inherit; text-decoration: none; 
 } 
 
-nav, nav div, nav ul, #banner, .offices, .services, footer div, form div, footer nav, footer nav + div {
+nav,
+nav div,
+nav ul,
+#banner,
+.offices,
+.services,
+footer div,
+form div,
+footer nav,
+footer nav + div {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
 }
+
+
 
 /* Header Navigation */
 
@@ -141,7 +165,7 @@ nav, nav div, nav ul, #banner, .offices, .services, footer div, form div, footer
 #tab-navigation a > div {
     justify-content: center;
     align-items: center;
-    padding: 1.5% 0;
+    padding: 1.5% .1em;
 }
 
 #tab-navigation a + a {
@@ -159,15 +183,13 @@ nav, nav div, nav ul, #banner, .offices, .services, footer div, form div, footer
 /* Location - Navigation */
 
 #location-navigation ul {
-    flex-flow: row wrap;
     width: 100%;
-    padding: 3% 5% 0;
+    padding: 3em 5% 0;
     justify-content: flex-end;
-    
 }
 
 #location-navigation ul li {
-    padding: 0 1%;
+    padding: 0 2% 0 0;
     font-size: .9em;
     color: #0A20A2;
 }
@@ -238,7 +260,7 @@ main p {
     background-color: #0A20A2;
     padding: 2% 1%;
     color: #FFF;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: .7em;
     text-align: center;
     display: inline-block;
@@ -272,11 +294,85 @@ main p {
     font-size: 1em;
 }
 
+/* Aside - Detail */
+
+aside {
+    width: 25%;
+    float: left;
+}
+
+aside ul {
+    display: block;
+    width: 80%;
+    margin: 0 10%;
+}
+
+aside li {
+    padding: 3% 0;
+}
+
+aside .button {
+    width: 50%;
+    margin: 0 15% 0 10%;
+    padding: 4% 5%;
+    background-color: #4A96FB;
+    text-align: left;
+}
+
+/* Main - Detail */ 
+
+main#detail {
+    width: 75%;
+    margin: 0 0 2% 0;
+    float: right;
+}
+
+main#detail h1 {
+    position: relative;
+    font-family: 'SourceSansPro', sans-serif;
+    font-size: 2.9em;
+    color: #4A96FB;
+    text-shadow: none;
+    top: 0;
+    left: 0;
+}
+
+main#detail img {
+    width: 40%;
+    float: right;
+    margin: 0 5% 0 2%;
+}
+
+main#detail p {
+    padding: 1% 5% 1% 0;
+}
+
+main#detail ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+main#detail ul > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
+main#detail .button {
+    text-align: left;
+    padding: 2% 2%;
+}
+
+main#detail .email, aside .email {
+    text-decoration: underline;
+}
+
 /* Footer */
 
 body#main footer nav {
     justify-content: center;
-    padding: 1% 25%;
+    padding: 1% 15%;
     font-size: .9em;
 }
 
@@ -293,10 +389,12 @@ footer nav + div {
 
 /* Footer - Location */
 
-footer div, footer nav ul {
+footer div,
+footer nav ul {
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 1% 5%;
+    clear: both;
 }
 
 footer div > section {
@@ -320,7 +418,9 @@ form ul li {
     padding: 0 0 3%;
 }
 
-input[type=text], textarea, select {
+input[type=text],
+textarea,
+select {
     width: 100%;
     padding: 2% 4%;
     display: inline-block;
@@ -359,9 +459,15 @@ input[type=submit] {
     color: #FFF;
     padding: 2% 5%;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     float: right;
+}
+
+@-moz-document url-prefix(){
+    input[type=submit] {
+    margin-top: 1.5em;
+    }
 }
 
 /* Office Hours */
@@ -385,12 +491,13 @@ input[type=submit] {
 /* Footer Navigation */
  
 footer nav ul {
-    width: 100%;
+    width: 90%; 
 }
 
 footer nav ul > li {
     font-family: 'SourceSansProBold', sans-serif;
     color: #0A20A2;
+    padding: 1%;
 }
 
 
@@ -512,6 +619,13 @@ footer nav ul > li {
         font-size: 90%;
     }  
     
+    h1 {
+        position: absolute;
+        top: 0;
+        left: 3%;
+        font-size: 2.2em;
+    }
+
     nav a {
         padding: 2% 0;
     }
@@ -542,6 +656,13 @@ footer nav ul > li {
         width: 80%;
     }
     
+/* Location - Navigation */
+
+    #location-navigation ul {
+        display: none;
+
+    }    
+    
 /* Main - Main */    
 
     .button {
@@ -570,6 +691,29 @@ footer nav ul > li {
     body#main footer nav {
         padding: 2% 10%;
     }
+    
+/* Footer - Location */
+
+    footer div > section {
+        flex: 1 0 44%;
+        padding: 2% 6% 2% 0;
+    }
+
+    footer div > section + section {
+        padding:  2% 0;
+    }  
+    
+    .hours li, .hours .right-col {
+        flex-basis: 50%;
+    }
+    
+    footer nav ul {
+        
+    }
+    
+    footer nav ul > li {
+       
+    }
 }
 
 /*** Up to 720px ***/
@@ -594,6 +738,10 @@ footer nav ul > li {
     body {
         font-size: 90%;
     }  
+    
+    h1 {
+        font-size: 2em;
+    }
     
     #banner, main p, .offices, .services {
         padding: 4% 5%;
@@ -626,7 +774,7 @@ footer nav ul > li {
     }
     
     .heart-md {
-        width: 78%;
+        width: 72%;
     }
 
     .fb {
@@ -665,13 +813,27 @@ footer nav ul > li {
     }
 
     body#main footer nav a {
-        padding: 4% 0;
-        margin: 0 auto;
+        padding: 2% 0;
     }
     
     footer nav + div {
         padding: 6% 0;
     }
+    
+/* Footer - Location */
+
+    footer div > section {
+        flex: 1 0 100%;
+        padding: 0 0 4% 0;
+    }
+
+    footer div > section + section {
+        padding: 4% 0;
+    }  
+    
+    .hours li, .hours .right-col {
+        flex-basis: 50%;
+    }    
 }
 
 /*** Up to 480px ***/
@@ -679,7 +841,11 @@ footer nav ul > li {
     
     body {
         font-size: 90%;
-    }        
+    }  
+    
+    h1 {
+        font-size: 1.5em;
+    }
     
      #banner > span {
         font-size: 2.5em;
