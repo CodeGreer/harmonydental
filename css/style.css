@@ -130,7 +130,7 @@ a:link, a:visited, a:hover, a:active {
     color: inherit; text-decoration: none; 
 } 
 
-nav, nav div, nav ul, #main-banner, #location-banner, .offices, .services, footer nav, footer nav + div {
+nav, nav div, nav ul, #banner, .offices, .services, footer div, form div, footer nav, footer nav + div {
     display: flex;
 }
 
@@ -138,31 +138,13 @@ nav, nav div, nav ul, #main-banner, #location-banner, .offices, .services, foote
 
 /* Tabs */
 
-#location-header-nav ul {
-    flex-flow: row wrap;
-    width: 100%;
-    padding: 3% 5% 0;
-    justify-content: flex-end;
-}
-
-#location-header-nav ul li {
-    padding: 0 1%;
-    font-size: .9em;
-    color: #0A20A2;
-}
-
-nav div {
+#tab-navigation a > div {
     justify-content: center;
     align-items: center;
+    padding: 1.5% 0;
 }
 
-nav a {
-    flex: 1;
-    text-align: left;
-    padding: .5% 0;
-}
-
-#top-nav a + a {
+#tab-navigation a + a {
    border-left: .1em solid #6A6A6A;
 }
 
@@ -174,14 +156,30 @@ nav a {
     font-size: .7em;
 }
 
+/* Location - Navigation */
+
+#location-navigation ul {
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 3% 5% 0;
+    justify-content: flex-end;
+    
+}
+
+#location-navigation ul li {
+    padding: 0 1%;
+    font-size: .9em;
+    color: #0A20A2;
+}
+
 /* Header Banner */
 
-#main-banner, #location-banner {
+#banner {
     padding: 1% 5%;
     justify-content: space-between;
 }
 
-#main-banner > *, #location-banner > * {
+#banner > * {
     align-self: center;
 }
 
@@ -189,7 +187,7 @@ nav a {
     width: 15%;
 }
 
-#main-banner > span, #location-banner > span {
+#banner > span {
     font-family: 'SourceSansProBold', sans-serif;
     font-size: 3.5em;
 }
@@ -222,7 +220,6 @@ main p {
 .offices {
     padding: 1% 5%;
     justify-content: space-between;
-    align-items: center;
     text-align: center;
 }
 
@@ -256,6 +253,7 @@ main p {
 .services > div {
     padding: 0 3% 0 0;
     flex: 1 0 30%;
+    align-items: flex-start;
 }
 
 .services > div + div + div {
@@ -276,17 +274,14 @@ main p {
 
 /* Footer */
 
-footer {
+body#main footer nav {
+    justify-content: center;
+    padding: 1% 25%;
     font-size: .9em;
 }
 
-#main-footer-nav {
-    justify-content: center;
-    padding: 1% 25%;
-}
-    
-#main-footer-nav a + a {
-    border: none;
+body#main footer nav a {
+    padding: 0 5%;
 }
 
 footer nav + div {
@@ -294,22 +289,107 @@ footer nav + div {
     background-color: #4A96FB;
     color: #FFF;
     justify-content: center;
-    align-items: center;
 }
 
 /* Footer - Location */
 
-#location-footer-nav ul {
-    width: 100%;
+footer div, footer nav ul {
     flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
     padding: 1% 5%;
 }
 
-#location-footer-nav ul li {
-    font-family: 'SourceSansProBold', sans-serif;
+footer div > section {
+    flex: 1 0 30%;
+    padding: 0 3% 0 0;
+    align-items: flex-start;
+}
+
+footer div > section + section + section{
+    padding-right: 0;
+}
+
+/* Contact Form */
+
+form ul {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+form ul li {
+    padding: 0 0 3%;
+}
+
+input[type=text], textarea, select {
+    width: 100%;
+    padding: 2% 4%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    box-sizing: border-box;
     font-size: 1em;
+    color: #6A6A6A;
+}
+
+::-webkit-input-placeholder { 
+    color: #CCC;
+    font-family: 'SourceSansPro', sans-serif; 
+}
+
+::-moz-placeholder {
+    color: #CCC;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+:-ms-input-placeholder {
+    color: #CCC;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+:-moz-placeholder {
+    color: #CCC;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+input[type=submit] {
+    width: 25%;
+    background-color: #0A20A2;
+    font-family: 'SourceSansPro', sans-serif;
+    font-size: 1em;
+    color: #FFF;
+    padding: 2% 5%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Office Hours */
+
+.hours {
+    display: flex;
+}
+
+.hours li {
+    flex-basis: 30%;
+    text-align: left;
+    padding-top: 2%;
+    font-size: 1em;
+}
+
+.hours .right-col {
+   flex-basis: 70%;
+}
+
+
+/* Footer Navigation */
+ 
+footer nav ul {
+    width: 100%;
+}
+
+footer nav ul > li {
+    font-family: 'SourceSansProBold', sans-serif;
     color: #0A20A2;
 }
 
@@ -436,13 +516,13 @@ footer nav + div {
         padding: 2% 0;
     }
     
-    #main-banner, #location-banner, main p, .offices, .services {
+    #banner, main p, .offices, .services {
         padding: 2% 5%;
     }
     
     /* Header Banner */
 
-    #main-banner, #location-banner {
+    #banner {
         flex-flow: wrap;
     }
 
@@ -452,6 +532,10 @@ footer nav + div {
 
     .heart {
         width: 40%;
+    }
+    
+    .heart-md {
+        width: 43%;
     }
 
     .fb {
@@ -470,11 +554,11 @@ footer nav + div {
 
     .services > div {
         flex: 1 0 44%;
-        padding: 0 3% 0 0;
+        padding: 2% 3% 2% 0;
     }
     
     .services > div + div {
-        padding: 0;
+        padding:  2% 0;
     }
     
     .services img {
@@ -483,7 +567,7 @@ footer nav + div {
 
 /* Footer */
 
-    #main-footer-nav {
+    body#main footer nav {
         padding: 2% 10%;
     }
 }
@@ -511,7 +595,7 @@ footer nav + div {
         font-size: 90%;
     }  
     
-    #main-banner, #location-banner, main p, .offices, .services {
+    #banner, main p, .offices, .services {
         padding: 4% 5%;
     }
     
@@ -533,12 +617,16 @@ footer nav + div {
         width: 90%;
     }
     
-    #main-banner > span, #location-banner > span {
+    #banner > span {
         font-size: 3.2em;
     }
 
     .heart {
         width: 75%;
+    }
+    
+    .heart-md {
+        width: 78%;
     }
 
     .fb {
@@ -562,18 +650,23 @@ footer nav + div {
     
     .services > div {
         flex: 1 0 100%;
-        padding: 0;
+        padding: 4% 0;
+    }
+    
+    .services > div + div {
+        padding: 4% 0;
     }
 
 /* Footer */
 
-    #main-foooter-nav {
-        padding: 4% 5%;
+    body#main footer nav {
+        padding: 0 5% 4%;
         flex-flow: column wrap;
     }
-    
-    #main-footer-nav a {
+
+    body#main footer nav a {
         padding: 4% 0;
+        margin: 0 auto;
     }
     
     footer nav + div {
@@ -588,7 +681,7 @@ footer nav + div {
         font-size: 90%;
     }        
     
-     #main-banner > span, #location-banner > span {
+     #banner > span {
         font-size: 2.5em;
     }
 }
