@@ -447,7 +447,7 @@ footer div,
 footer nav ul {
     flex-flow: row wrap;
     justify-content: space-around;
-    padding: 1% 5%;
+    padding: 1em 5%;
     clear: both;
 }
 
@@ -821,7 +821,7 @@ footer nav ul > li {
     }
     
     .services > div + div {
-        padding:  2% 0;
+        padding:  1em 0;
     }
     
     .services img {
@@ -982,11 +982,7 @@ footer nav ul > li {
     
     .services > div {
         flex: 1 0 100%;
-        padding: 4% 0;
-    }
-    
-    .services > div + div {
-        padding: 4% 0;
+        padding: 1em 0;
     }
     
 

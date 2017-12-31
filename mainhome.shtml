@@ -14,20 +14,16 @@
     
 
 <!-- Twitter -->
-    
-    
-<!-- Favicon -->
-
 
     
 <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
-<!-- Google Fonts -->
-    
-    
-<!-- Javascript -->  
-    
+<!-- Google -->
+    <!--#include virtual="/share/google-analytics2018.txt" -->
+  
+<!-- Favicon -->
+    <!--#include virtual="/share/favicon.html" -->    
     
 </head>
   
@@ -38,39 +34,11 @@
         
 <!-- Header -->   
     
-    <header>   
-  
-<!-- Navigation --> 
+    <header> 
         
-        <nav id="tab-navigation">
-            
-            <a href="/">
-                <div>
-                    <span class="bold">Hamilton, NJ Office</span>&ensp;<img class="location" alt="Image Description" src="imgs/icon-location-gray.png">&ensp;<span class="address">4605A Nottingham Way<br>(609) 981-7145</span>
-                </div>
-            </a>
-            
-            <a href="/">
-                <div>
-                    <span class="bold">Freehold, NJ Office</span>&ensp;<img class="location" alt="Image Description" src="imgs/icon-location-gray.png">&ensp;<span class="address">63 West Main Street<br>(732) 780-1400</span>
-                </div>
-            </a>
-            
-        </nav>
-    
-<!-- End Navigation -->        
-        
-        <div id="banner">
-            
-            <img class="logo" alt="Image Description" src="imgs/dental-harmony-logo.png">
-            
-            <span>Making a Difference</span>
-            
-            <img class="heart" alt="Image Description" src="imgs/home/heart-ribbon.png">
-            
-            <a href="/"><img class="fb" alt="Image Description" src="imgs/follow-us-facebook.png"></a>
-            
-        </div>
+        <!--#include virtual="/share/white-tabs.html" -->     
+
+        <!--#include virtual="/share/main-banner.html" --> 
             
     </header> 
     
@@ -89,7 +57,7 @@
                 <span class="blue bold"><a href="/">Dental Harmony of Hamilton, NJ</a></span><br>4605A Nottingham Way<br><a href="tel:609-981-7145">(609) 981-7145</a>
                 
                 <a href="/">
-                    <img class="circle" alt="Image Description" src="imgs/home/circle-hamilton.jpg">
+                    <img class="circle" alt="Image Description" src="imgs/main/circle-hamilton.jpg">
                 </a>
                 
                 <a href="/">
@@ -106,7 +74,7 @@
                 <span class="blue bold"><a href="/">Dental Harmony of Freehold, NJ</a></span><br>63 West Main Street<br><a href="tel:732-780-1400">(732) 780-1400</a>
                 
                 <a href="/">
-                    <img  class="circle" alt="Image Description" src="imgs/home/circle-freehold.jpg">
+                    <img  class="circle" alt="Image Description" src="imgs/main/circle-freehold.jpg">
                 </a>
                 
                 <a href="/">
@@ -159,38 +127,11 @@
  
         
 <!-- Footer --> 
-    
-    <footer>
-        
-        <nav>
-            
-            <a href="/">
-                <div>
-                    <span class="blue bold">Dental Harmony of Hamilton, NJ</span>
-                </div>
-            </a>
-            
-            <a href="/">
-                <div>
-                    <span class="blue bold">Dental Harmony of Freehold, NJ</span>
-                </div>
-            </a>
-            
-        </nav>
      
-        <div>
-            &copy;2017 Dental Harmony, All Rights Reserved.
-        </div>
-       
-    </footer>  
+        <!--#include virtual="/share/main-footer.html" -->
     
 <!-- End Footer -->  
-    
-<!-- Javascript -->  
-    
-
-        
-<!-- End Javascript -->          
+            
     
 </body> 
 </html>
