@@ -37,11 +37,11 @@
     
     <header>   
           
-        <!--#include virtual="/share/hamilton-tab-white.html" -->
+        <!--#include virtual="/share/freehold-tab-white.html" -->
         
         <!--#include virtual="/share/full-nav.html" -->
         
-        <!--#include virtual="/share/hamilton-banner.html" -->
+        <!--#include virtual="/share/freehold-banner.html" -->
             
     </header> 
     
@@ -52,7 +52,7 @@
     <main id="location">
         
         <h1>Preventative &amp; Implant dentistry<br>for you and your family</h1>
-        <img alt="Image Description" src="imgs/masthead-background-hamilton-nj.jpg">
+        <img alt="Image Description" src="imgs/masthead-background-freehold-nj.jpg">
 
         <div class="services">
             
@@ -104,7 +104,7 @@
     
 <!-- End Main --> 
  
-    <!--#include virtual="/share/hamilton-footer.html" -->        
+    <!--#include virtual="/share/freehold-footer.html" -->        
         
     
 </body> 

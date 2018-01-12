@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    
+    <title></title>
+
+    <link rel="canonical" href="your url here">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="keyword, keyword, keyword, keyword, keyword, keyword" >
+    <meta name="description" content="Sentence for Google to index with your link.">
+
+<!-- Facebook -->
+    
+
+<!-- Twitter -->
+
+
+<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<!-- Google -->
+    <!--#include virtual="/share/google-analytics2018.txt" -->
+    
+<!-- Favicon -->
+    <!--#include virtual="/share/favicon.html" -->
+    
+</head>
+  
+<body> 
+    
+<!-- start my code -->
+
+        
+<!-- Header -->   
+    
+    <header>   
+        
+        <!--#include virtual="/share/hamilton-tab-white.html" -->
+
+        <!--#include virtual="sub-nav.html" -->
+
+        <!--#include virtual="/share/hamilton-banner.html" -->
+            
+    </header> 
+    
+<!-- End Header --> 
+                    
+<!-- Main --> 
+    
+    <main id="detail">
+        
+        <h1>Dental Implants in NJ</h1>
+        
+        <img alt="Image Description" src="imgs/placeholder-detail-page.jpg">
+        
+        <p>You've lost a tooth, or perhaps several. Chewing is difficult and as a result nutrition is compromised. Not only is the food not digested properly but often crucial foods will be omitted altogether from your diet. And smiling, well it's too embarrassing. There is no question that the quality of your life has changed. Dental implants are the solution to renewing your smile, your chewing ability and quite frankly your quality of life.</p>
+        
+        <p>ClearChoice doctors focus exclusively on dental implants. Whether it's replacing a single tooth, multiple teeth or full upper and lower arches, the specialists at ClearChoice offer patients a world class level of expertise and care.</p>
+        
+        <p>The ClearChoice treatment model revolves around the patient. With a highly trained team, precise imaging equipment, dental lab facilities and helpful Patient Education Consultants-all together in the same center-we're uniquely equipped to make dental implant treatment the best possible experience it can be for our patients.</p>
+        
+        <p>Specific services offered at ClearChoice include:</p>
+        <ul>
+            <li>3D CT Scans of your mouth and jawbone</li>
+            <li>Surgical removal of an unhealthy tooth or teeth and precise placement of the implant(s)</li>
+            <li>Sedation administration</li>
+            <li>Design and creation of prosthetic teeth at our onsite dental lab</li>
+            <li>Guidance and support throughout the process, with financing help available if needed</li>
+        </ul>
+        
+        <br>
+        
+        <!--#include virtual="/share/detailpage-button.html" -->
+        
+    </main>   
+    
+<!-- End Main -->  
+    
+<!-- Aside -->
+    
+    <aside>
+        <nav class="sub-navigation">
+            <ul class="blue bold">
+                <li><a href="/">Sub navigation One</a></li>
+                <li><a href="/">Sub navigation Two</a></li>
+                <li><a href="/">Sub navigation with a really long name so this is how it will look</a></li>
+                <li><a href="/">Sub navigation Four</a></li>
+            </ul>
+        </nav>
+        <br>
+        
+        <div class="button">
+            <h3>Call us with any of your questions</h3>
+            
+            <p>If you are looking for a dentist in NJ for your and your family, please contact us by calling us at <a href="tel:609-981-7145">(609) 981-7145</a> or send us an email at: <a class="email" href="mailto:info@dentalharmony.com">info@dentalharmony.com</a></p>
+        </div>
+    </aside>
+    
+<!-- End Aside -->           
+        
+     
+    <!--#include virtual="/share/hamilton-footer.html" -->
+        
+</body> 
+</html>

@@ -36,11 +36,11 @@
     
     <header>   
         
-        <!--#include virtual="/share/hamilton-tab-white.html" -->
+        <!--#include virtual="/share/freehold-tab-white.html" -->
 
-        <!--#include virtual="/sub-nav.html" -->
+        <!--#include virtual="sub-nav.html" -->
 
-        <!--#include virtual="/share/hamilton-banner.html" -->
+        <!--#include virtual="/share/freehold-banner.html" -->
             
     </header> 
     
@@ -100,7 +100,7 @@
 <!-- End Aside -->           
         
      
-    <!--#include virtual="/share/full-footer.html" -->
+    <!--#include virtual="/share/freehold-footer.html" -->
         
 </body> 
 </html>
