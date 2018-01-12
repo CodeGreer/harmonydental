@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    
+    <title></title>
+
+    <link rel="canonical" href="../hamilton-nj/your url here">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="keyword, keyword, keyword, keyword, keyword, keyword" >
+    <meta name="description" content="Sentence for Google to index with your link.">
+
+<!-- Facebook -->
+    
+
+<!-- Twitter -->
+
+    
+<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+<!-- Google -->
+    <!--#include virtual="/share/google-analytics2018.txt" -->
+    
+<!-- Favicon -->
+    <!--#include virtual="/share/favicon.html" --> 
+    
+    
+</head>
+  
+<body> 
+    
+<!-- start my code -->
+
+        
+<!-- Header -->   
+    
+    <header>   
+          
+        <!--#include virtual="/share/hamilton-tab-white.html" -->
+        
+        <!--#include virtual="/share/full-nav-hamilton.html" -->
+        
+        <!--#include virtual="/share/hamilton-banner.html" -->
+            
+    </header> 
+    
+<!-- End Header -->   
+                    
+<!-- Main --> 
+    
+    <main id="location">
+        
+        <h1><!-- TemplateBeginEditable name="Tagline" -->Preventative &amp; Implant dentistry<br>
+        for you and your family<!-- TemplateEndEditable --></h1>
+        <img alt="Image Description" src="/imgs/masthead-background-hamilton-nj.jpg">
+
+        <div class="services">
+            
+            <div><!-- TemplateBeginEditable name="col1" -->
+            <h2><a href="/">Preventative Dentistry</a></h2>
+            <img alt="Image Description" src="/imgs/placeholder1.jpg">
+            <p>Preventative dentistry is the practice of caring for your teeth to keep them healthy. This helps to avoid cavities, gum disease, enamel wear, and more. The most important part of preventative dentistry is to brush your teeth daily with flouride toothpaste approved by the American Dental Association (ADA).</p>
+            <a href="/">
+            <div class="button"> Learn about our dental services </div>
+            </a><!-- TemplateEndEditable --></div>
+            
+            <div><!-- TemplateBeginEditable name="col2" -->
+            <h2><a href="/">Cosmetic Dentistry</a></h2>
+            <img alt="Image Description" src="/imgs/placeholder2.jpg">
+            <p>Cosmetic dentistry can give you a dazzling, high-quality smile and tons of self-confidence. But cosmetic dentistry is not just for cosmetic reasons. Problems with broken or missing teeth can also cause functional problems. They can throw off your bite function or make it hard for you to eat certain foods.</p>
+            <a href="/">
+            <div class="button"> Learn about our cosmetic dental services </div>
+            </a><!-- TemplateEndEditable --></div>
+            
+            <div><!-- TemplateBeginEditable name="col3" -->
+            <h2><a href="/">Dental Anesthetic Options</a></h2>
+            <img alt="Image Description" src="/imgs/placeholder3.jpg">
+            <p>Your smile is one of the first things people notice. If you want a beautiful healthy smile and exceptional dental health, visit our practice. Our dentists, along with their caring team, stive to provide patients with the highest quality, most comforable dental care in a relaxing, state-of-the-art environment.</p>
+            <a href="/">
+            <div class="button"> Learn about our cosmetic dental services </div>
+            </a><!-- TemplateEndEditable --></div>
+            
+        </div>
+    
+    </main>   
+    
+<!-- End Main --> 
+ 
+    <!--#include virtual="/share/hamilton-footer.html" -->        
+        
+    
+</body> 
+</html>

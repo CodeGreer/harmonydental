@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="Page Title" --><title>Dental Harmony - Dr. Brandon Elimanco 63 West Main Street, Freehold, NJ 07743  (732) 780-1400</title><!-- TemplateEndEditable -->
+<link href="/css/base.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--#include virtual="/shared/logo.htm" -->
+<table width="97%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="7" valign="top" background="/images/shad_left_tile.jpg"><img src="/images/shad_left.jpg" width="7" height="242" /></td>
+      <td valign="top" bgcolor="#F1F1F1">
+      <!--#include virtual="/shared/masthead.htm" -->
+      <!--#include virtual="/shared/mainnav.htm" -->
+        <div id="maincontent">
+        
+      <div id="homevideo">
+            <object width="980" height="551">
+           <param name="movie" value="http://www.youtube.com/v/KSLBBfy-hdc?fs=1&amp;hl=en_US&amp;hd=1&autoplay=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
+           <embed src="http://www.youtube.com/v/KSLBBfy-hdc?fs=1&amp;hl=en_US&amp;hd=1&autoplay=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="980" height="551"></embed></object>
+
+      </div>
+      
+      
+      
+<div id="rightcol">
+            <div id="spotlighthome"><!-- TemplateBeginEditable name="Spotlight Content" -->
+                <h1>How can I get mercury fillings removed without exposing myself to toxic mercury vapor?</h1>
+                <p><img src="/images/branding/pic_smile.jpg" width="105" height="104" />Here's a great idea: 
+                  Let's take one of the 5 most toxic elements 
+                  on the periodic table                  and put it in people's
+                  mouths. That's exactly
+                  what dentists have 
+    been doing in the United States for decades, as they've been filling dental cavities with none other than mercury. Of course, they call them &quot;silver&quot; fillings.</p>
+                <p><a href="/"><strong>Read more about safely removing filings...</strong></a><br />
+                </p>
+              <!-- TemplateEndEditable --></div>
+                
+              <div id="spotlightbottom"><img src="/images/spotlight_bottom.jpg" width="294" height="28" /> </div>
+              
+
+</div>
+            
+            
+            
+          <!-- TemplateBeginEditable name="Main Content" -->
+          <h1>Creating Dental Harmony in Freehold, NJ </h1>
+          <p>Welcome to the office of Freehold dentist Dr. Brandon Elimanco, where we combine an artistic vision with the marvels of modern science to create dazzling, healthy smiles for our patients. Each and every smile cosmetic dentist, Dr. Elimanco designs at his beautiful Freehold facility is a carefully crafted, original masterpiece. We offer a full range of cosmetic dentistry options, so whether you are in need of a subtle enhancement or a full smile makeover, our Freehold cosmetic dentist has a solution for you. </p>
+          <p>Come explore our world of beautiful smile possibilities today. If you are in need of a cosmetic dentist, <strong>Dr. Brandon Elimanco</strong> can provide you with amazing results that will leave you smiling for years to come!</p>
+          <p>Learn More about:</p>
+          <ul>
+            <li> <a href="/"><strong>Britesmile</strong></a></li>
+            <li>Dental Veneers</li>
+            <li> Dental Bonding</li>
+            <li>Tooth-colored Fillings</li>
+            <li> Dental Bridges</li>
+            <li>Teeth Whitening </li>
+            <li> Dental Crowns</li>
+            <li>General Dentistry </li>
+            <li> Cosmetic Dentures</li>
+            <li>TMJ Treatment</li>
+            <li> Dental Implants </li>
+          </ul>
+          <!-- TemplateEndEditable -->
+         
+        </div>
+        
+       
+        
+        <!--#include virtual="/shared/footer.htm" -->        </td>
+      <td width="7" valign="top" background="/images/shad_right_tile.jpg"><img src="/images/shad_right.jpg" width="7" height="242"></td>
+    </tr>
+    <tr>
+      <td colspan="3"><div id="footerbot">
+        <div id="footerleft"><img src="/images/footer_shad_left.jpg" width="20" height="17" /></div>
+        <div id="footerright"><img src="/images/footer_shad_right.jpg" width="20" height="17" /></div>
+      </div></td>
+    </tr>
+  </table>
+  <!--#include virtual="/shared/google.htm" -->
+</body>
+</html>
