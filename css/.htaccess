@@ -1,0 +1,69 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://codegreer.com%{REQUEST_URI} [L,NE,R=301]
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 month"
+ExpiresByType text/css "access 1 week"
+ExpiresByType text/html "access 1 week"
+ExpiresByType application/pdf "access 1 year"
+ExpiresByType text/x-javascript "access 1 week"
+ExpiresByType application/x-shockwave-flash "access 1 year"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
+
+
+ErrorDocument 404 /404.html
+
+Redirect 301 /about.html https://codegreer.com/
+
+Redirect 301 /projects.html https://codegreer.com/
+
+Redirect 301 /services.html https://codegreer.com/
+
+Redirect 301 /cms.html http://blog.codegreer.com/
+
+Redirect 301 /cms.php http://blog.codegreer.com/
+
+Redirect 301 /joyce_interview.html https://codegreer.com/joyce-interview.php
+
+Redirect 301 /joyce_interview.php https://codegreer.com/joyce-interview.php
+
+Redirect 301 /groundup.php https://codegreer.com/
+
+Redirect 301 /fitoneball.php https://codegreer.com/
+
+Redirect 301 /northwind.php https://codegreer.com/
+
+Redirect 301 /teeitup.php https://codegreer.com/
+
+Redirect 301 /christineaustin.php https://codegreer.com/
+
+
+Redirect 301 /musclemass.php https://codegreer.com/bodybuilding-supplements.php
+
+Redirect 301 /warmlaundry.php https://codegreer.com/warm-laundry.php
+
+Redirect 301 /thankyou.html https://codegreer.com/thank-you.html
+
+Redirect 301 /stellarbaking.php https://codegreer.com/stellar-baking.php
+
+Redirect 301 /stagedright.php https://codegreer.com/staged-right.php
+
+Redirect 301 /smithmag.php https://codegreer.com/smith-magazine.php
+
+Redirect 301 /moreadsyou.php https://codegreer.com/mo-reads-you.php
+
+Redirect 301 /bluewire.php https://codegreer.com/blue-wire.php
+
+Redirect 301 /birthcompanion.php https://codegreer.com/birth-companion.php
+
+
