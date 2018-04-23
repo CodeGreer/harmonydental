@@ -737,19 +737,20 @@ footer nav ul > li {
         z-index: 10;
         background-color: #0A20A2;
     }
-
+    
     .main-menu ul {
-        display: block;
-        min-height: 100%;
-        width: 100%;
-        background: #0A20A2;
+        margin-left: 10%;
+        font-size: 1.25em;
     }
-
+    
+    .main-menu ul ul {
+        margin-left: 10%;
+        font-size: 100%;
+    }
+    
     .main-menu a {
         display: block;
-        padding: 1em;
-        line-height: 1em;
-        font-size: 1.25em;
+        padding: 1em 0;
         color: #FFF;
     }
 
@@ -798,13 +799,60 @@ footer nav ul > li {
       cursor: default;
     }
     
-    #location-navigation ul.sub-nav {
-        display: flex;
-        flex-flow: column;
-        font-size: 1em;
-        padding: 0 0 0 10%;
+ /* Expand Menu */
+    
+    #location-navigation ul.hide {
+        display: none;
     }
     
+    #location-navigation ul.sub-nav {
+        display: block;
+        padding: 0;
+    }
+    
+    .padding {
+        position: absolute;
+        top: 3em;
+    }
+
+	ul.sub-nav li { 
+		position: relative; 
+		margin-left: 0;
+        padding: 1em 0;
+		list-style: none;
+	}
+
+	li input {
+		position: absolute;
+		left: 0;
+		margin-left: 0;
+		opacity: 0;
+		z-index: 2;
+		cursor: pointer;
+		height: 1em;
+		width: 1em;
+		top: 0;
+	}
+		
+    li input + ul > li { 
+        display: none;  
+    }
+
+	li label {
+		cursor: pointer;
+		display: block;
+        color: #FFF;
+        padding: 1em 0;
+	}
+		
+    li input:checked + ul > li { 
+        display: block; 
+        margin: 0;
+    }
+		
+    li input:checked + ul > li:last-child { 
+        margin: 0 0 .5em; 
+}
     
     
 /* Header Banner */
